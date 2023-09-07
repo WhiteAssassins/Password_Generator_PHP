@@ -28,6 +28,8 @@
     <input type="checkbox" id="includeSpecialChars" name="characterType" class="mr-2" checked>
     <label for="includeSpecialChars">Caracteres Especiales</label>
 </div>
+
+
             <div class="flex items-center space-x-2">
                 <button id="generateBtn" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Generar Contraseña</button>
                 <div class="mode-switcher">
@@ -40,6 +42,13 @@
                 
             </div>
             <div id="password" class="text-lg mt-4"></div>
+            <div class="mb-2">
+    <label class="block font-medium mb-2">Fortaleza de la Contraseña:</label>
+    <div class="password-strength-meter">
+        <div id="strengthMeter" class="h-2 rounded"></div>
+    </div>
+</div>
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
