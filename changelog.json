@@ -1,0 +1,22 @@
+[
+    {
+        "fecha": "2023-09-07",
+        "cambios": [
+            "Agregado generador de contraseñas aleatorias con PHP en el backend.",
+            "Agregada animación con AJAX en el frontend.",
+            "Agregado diseño responsive y minimalista con Tailwind CSS.",
+            "Agregado modo oscuro y claro.",
+            "Agregadas animaciones agradables con animate.css.",
+            "Agregado generador de contraseñas de longitud personalizable.",
+            "Agregada imagen de fondo a la tarjeta.",
+            "Agregada transparencia oscura en modo oscuro.",
+            "Agregada funcionalidad para cambiar al modo oscuro y claro.",
+            "Agregada opción para elegir tipos de caracteres para las contraseñas.",
+            "Agregada validación de fortaleza de la contraseña.",
+            "Agregada barra de fortaleza de la contraseña.",
+            "Agregada función para otorgar un punto adicional si la contraseña supera los 15 caracteres.",
+            "Agregado historial de cambios.",
+            "Diseño mejorado del historial de cambios."
+        ]
+    }
+]

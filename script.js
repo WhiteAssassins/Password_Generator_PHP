@@ -10,7 +10,7 @@ $(document).ready(function () {
             var type = $(this).attr('id');
             charset += characterSets[type];
         });
-
+   addToChangeHistory('Nueva contraseña generada');
         var password = generatePassword(length, charset);
         var strength = evaluatePasswordStrength(password);
         displayPasswordStrength(strength);
@@ -24,6 +24,30 @@ $(document).ready(function () {
         $('div').toggleClass('bg-gray-700 '); // Cambia entre los colores de fondo claro y oscuro
         $('div').toggleClass('text-white text-black'); // Cambia entre los colores de texto claro y oscuro
     });
+    
+
+    $('#openHistoryBtn').click(function () {
+        // Realiza una solicitud AJAX para cargar el historial de cambios desde changelog.json
+        $.ajax({
+            url: 'changelog.json',
+            dataType: 'json',
+            success: function (data) {
+                displayChangeHistory(data);
+            },
+            error: function () {
+                console.log('Error al cargar el historial de cambios.');
+            }
+        });
+
+        // Abre el modal
+        $('#myModal').removeClass('hidden');
+    });
+
+    $('#closeModalBtn').click(function () {
+        // Cierra el modal
+        $('#myModal').addClass('hidden');
+    });
+
 });
 
 var characterSets = {
@@ -118,4 +142,31 @@ function displayPasswordStrength(strength) {
 
     strengthMeter.removeClass(meterClasses.join(' ')).addClass(meterClass);
     strengthMeter.animate({ width: meterWidth + '%' }, 500);
+}
+
+
+
+
+function displayChangeHistory(data) {
+    // Muestra el historial de cambios en el modal
+    var modalContent = $('#modalContent');
+    modalContent.empty(); // Limpia el contenido existente
+
+    // Itera a través de las entradas de datos
+    data.forEach(function (entry) {
+        if (entry.cambios && Array.isArray(entry.cambios)) {
+            var fecha = entry.fecha;
+            var cambios = entry.cambios;
+
+            // Crea un elemento para la fecha
+            var fechaElement = $('<p class="text-lg font-semibold text-blue-500">' + fecha + '</p>');
+            modalContent.append(fechaElement);
+
+            // Itera a través de los cambios para esta fecha
+            cambios.forEach(function (cambio) {
+                var listItem = $('<p class="ml-4">' + cambio + '</p>');
+                modalContent.append(listItem);
+            });
+        }
+    });
 }
