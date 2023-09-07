@@ -10,7 +10,6 @@ $(document).ready(function () {
             var type = $(this).attr('id');
             charset += characterSets[type];
         });
-   addToChangeHistory('Nueva contraseña generada');
         var password = generatePassword(length, charset);
         var strength = evaluatePasswordStrength(password);
         displayPasswordStrength(strength);
