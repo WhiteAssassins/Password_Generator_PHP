@@ -26,29 +26,26 @@ El Generador de Contraseñas es una aplicación web diseñada para ayudar a los 
 
 ## Funcionalidades Principales
 
-- Generación de contraseñas seguras.
-- Personalización de la longitud y tipos de caracteres.
-- Modo oscuro y claro para la interfaz de usuario.
-- Historial de contraseñas generadas.
-- Validación de fortaleza de contraseñas.
-- Interfaz de usuario responsiva.
-- Integración con GitHub para control de versiones y licencia.
+- **Generación de Contraseñas Seguras:** Crea contraseñas aleatorias con opciones de personalización.
+- **Modo Oscuro/Modo Claro:** Cambia entre modos de interfaz de usuario según tus preferencias.
+- **Historial de Contraseñas:** Accede a un registro de las contraseñas generadas anteriormente.
+- **Validación de Fortaleza:** Evalúa la seguridad de las contraseñas generadas.
+- **Interfaz Responsiva:** Funciona de manera óptima en dispositivos móviles y de escritorio.
+- **Contribuciones Bienvenidas:** Colabora en el desarrollo del proyecto mediante Pull Requests.
 
-## Uso
-
-Para utilizar el Generador de Contraseñas, simplemente accede a [sitio-web-del-generador](URL-del-sitio-web) y sigue las instrucciones en la página. Puedes personalizar la longitud y los tipos de caracteres de la contraseña según tus preferencias.
 
 ## Contribución
 
-Si deseas contribuir al desarrollo de este proyecto, por favor sigue estas pautas:
+Si deseas contribuir al desarrollo de este proyecto, te invitamos a seguir estos pasos:
 
 1. Realiza un fork del repositorio.
-2. Crea una rama con tu nueva característica (`git checkout -b feature/NuevaCaracteristica`).
-3. Realiza tus cambios y haz commit (`git commit -am 'Agrega NuevaCaracteristica'`).
-4. Realiza un push a la rama (`git push origin feature/NuevaCaracteristica`).
-5. Crea un nuevo Pull Request y describe tus cambios detalladamente.
+2. Crea una rama con la nueva característica o corrección (`git checkout -b feature/NuevaCaracteristica`).
+3. Realiza tus cambios y crea commits descriptivos (`git commit -am 'Agrega NuevaCaracteristica'`).
+4. Haz push a la rama (`git push origin feature/NuevaCaracteristica`).
+5. Crea un Pull Request detallando tus cambios.
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
+Este proyecto está bajo la [Licencia MIT](LICENSE). Consulta el archivo LICENSE para obtener más detalles.
+
 
