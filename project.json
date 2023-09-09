@@ -1,0 +1,14 @@
+{
+    "nombre": "Generador de Contraseñas",
+    "descripcion": "Una aplicación web que genera contraseñas seguras utilizando HTML, CSS y JavaScript.",
+    "fecha_creacion": "2023-09-10",
+    "version": "1.0",
+    "fecha_ultima_actualizacion": "2023-09-10",
+    "herramientas_utilizadas": ["HTML", "CSS", "JavaScript"],
+    "creador": "WhiteAssassins",
+    "lenguaje": "JavaScript",
+    "categorias": ["Herramientas", "Seguridad"],
+    "etiquetas": ["Web", "Contraseñas", "Generador", "HTML5", "CSS3", "JavaScript"],
+    "licencia": "Licencia MIT",
+    "estado": "Completado"
+}
