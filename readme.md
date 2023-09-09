@@ -26,15 +26,11 @@ El Generador de Contraseñas es una aplicación web diseñada para ayudar a los 
 
 ## Funcionalidades Principales
 
-- Generación de contraseñas seguras y frases de contraseña.
+- Generación de contraseñas seguras.
 - Personalización de la longitud y tipos de caracteres.
 - Modo oscuro y claro para la interfaz de usuario.
 - Historial de contraseñas generadas.
 - Validación de fortaleza de contraseñas.
-- Consejos de seguridad.
-- Compatibilidad con administradores de contraseñas.
-- Selección de idioma.
-- Documentación detallada.
 - Interfaz de usuario responsiva.
 - Integración con GitHub para control de versiones y licencia.
 
